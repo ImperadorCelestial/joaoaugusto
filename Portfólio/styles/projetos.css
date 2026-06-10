@@ -1,0 +1,452 @@
+/* --------------- CONFIGURAÇÕES GLOBAIS --------------- */
+
+*
+{
+    pad: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* --------------- FONTE --------------- */
+
+.josefin-slab 
+{
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/* --------------- <BODY> --------------- */
+
+.corpo
+{
+  min-height: 100vh;
+
+  background-color: #262626;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Josefin Slab', serif;
+}
+
+
+/* --------------- HEADER --------------- */
+
+.topo
+{
+  display: flex;
+  flex-direction: row;
+
+  font-family: "Josefin Slab", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+
+  padding-top: 35px;
+}
+
+.home-button
+{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+
+  margin-right: 25px;
+
+  transition: transform 0.2s ease;
+}
+.home-button:hover
+{
+  transform: scale(1.10);
+}
+
+.projetos-button
+{
+  font-size: 20px;
+  text-decoration: none;
+  color: #F2B63C;
+
+  transition: transform 0.2s ease;
+}
+.projetos-button:hover
+{
+  transform: scale(1.10);
+}
+
+.contato-button
+{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+
+  margin-left: 25px;
+
+  transition: transform 0.2s ease;
+}
+.contato-button:hover
+{
+  transform: scale(1.10);
+}
+
+
+/* --------------- CONFIGURAÇÕES DA PÁGINA --------------- */
+
+
+/* --------------- MAIN --------------- */
+
+.meio
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* --------------- TÍTULO --------------- */
+
+.titulo-projetos
+{
+  width: 290px;
+  height: auto;
+
+  text-align: center;
+
+  margin-top: 50px;
+}
+.h1-titulo-projetos
+{
+  color: white;
+
+  font-size: 45px;
+  font-weight: 500;
+}
+.h3-titulo-projetos
+{
+  color: white;
+
+  font-weight: 300;
+
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+/* --------------- PROJETOS --------------- */
+
+.container-pai-box
+{
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.box
+{
+  width: 320px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 25px 3px 25px 25px;
+
+  text-align: center;
+
+  border: 3px solid #F2B63C;
+  border-radius: 15px;
+
+  background-color: #162C53;
+
+  color: white;
+
+  transition: all 0.3s ease;
+}
+.box:hover
+{
+  transform: scale(1.01);
+
+  box-shadow:
+        0 0 5px rgba(242, 182, 60, 0.3),
+        0 0 10px rgba(242, 182, 60, 0.2),
+        0 0 20px rgba(242, 182, 60, 0.1);
+}
+
+.conteudo
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding-right: 18px;
+}
+
+.conteudo::-webkit-scrollbar 
+{
+    width: 4px;
+}
+
+.conteudo::-webkit-scrollbar-track 
+{
+    border-radius: 10px;
+    margin: 8px 0;
+}
+
+.conteudo::-webkit-scrollbar-thumb 
+{
+    background: #F2B63C;
+    border-radius: 10px;
+}
+
+.conteudo::-webkit-scrollbar-thumb:hover 
+{
+    background: #F2B63C;
+}
+
+.titulo-box
+{
+  font-size: 30px;
+}
+
+.h3-titulo-projetos
+{
+  font-size: 20px;
+}
+
+.hr-box
+{
+  width: 200px;
+
+  margin-top: 15px;
+}
+
+.link
+{
+  margin-top: 15px;
+
+  text-decoration: none;
+
+  color: #F2B63C;
+}
+
+/* --------------- FOOTER --------------- */
+
+.base
+{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  margin-top: 50px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.base p
+{
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: "Josefin Slab", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/* --------------- CONFIGURAÇÕES RESPONSIVAS --------------- */
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------- TABLET --------------- */
+
+@media (min-width: 768px)
+{
+  /* --------------- HEADER --------------- */
+
+  .topo
+  {
+    padding-top: 50px;
+  }
+
+  .home-button
+  {
+    font-size: 24px;
+
+    margin-right: 28px;
+  }
+
+  .projetos-button
+  {
+    font-size: 24px;
+  }
+
+  .contato-button
+  {
+    font-size: 24px;
+
+    margin-left: 28px;
+  }
+
+
+  /* --------------- MAIN --------------- */
+
+  /* --------------- TÍTULO --------------- */
+
+  .titulo-projetos
+  {
+    width: 340px;
+
+    margin-top: 80px;
+  }
+  .h1-titulo-projetos
+  {
+    font-size: 51px;
+  }
+  .h3-titulo-projetos
+  {
+    font-size: 22px;
+
+    margin-top: 40px;
+  }
+
+
+  /* --------------- PROJETOS --------------- */
+
+  .container-pai-box
+  {
+    column-gap: 10px;
+    row-gap: 50px;
+  }
+
+  .box
+  {
+    width: 360px;
+    height: 460px;
+  }
+
+  .titulo-box
+  {
+    font-size: 34px;
+  }
+
+  .hr-box
+  {
+    width: 250px;
+  }
+
+  .link
+  {
+    font-size: 24px;
+  }
+}
+
+/* --------------- TABLET 2 --------------- */
+
+@media (min-width: 912px)
+{
+  .container-pai-box
+  {
+    gap: 30px;
+  }
+}
+
+/* --------------- TABLET 3 --------------- */
+
+@media (min-width: 1024px)
+{
+  .container-pai-box
+  {
+    gap: 50px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------- DESKTOP PEQUENO --------------- */
+
+@media (min-width: 1024px) and (max-height: 600px)
+{
+  /* --------------- HEADER --------------- */
+
+  .topo
+  {
+    padding-top: 35px;
+  }
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------- DESKTOP MEDIO --------------- */
+
+@media (min-width: 1600px)
+{
+  /* --------------- HEADER --------------- */
+
+  .topo
+  {
+    padding-top: 45px;
+    font-size: 20px;
+  }
+
+  .home-button
+  {
+    margin-right: 45px;
+  }
+
+  .contato-button
+  {
+    margin-left: 45px;
+  }
+
+
+  /* --------------- MAIN --------------- */
+
+  /* --------------- TÍTULO --------------- */
+
+  .titulo-projetos
+  {
+    width: 740px;
+
+    margin-top: 100px;
+  }
+  .h1-titulo-projetos
+  {
+    font-size: 60px;
+  }
+  .h3-titulo-projetos
+  {
+    font-size: 28px;
+  }
+
+
+  /* --------------- PROJETOS --------------- */
+
+  .box
+  {
+    width: 440px;
+    height: 510px;
+  }
+
+  .titulo-box
+  {
+    font-size: 45px;
+  }
+}

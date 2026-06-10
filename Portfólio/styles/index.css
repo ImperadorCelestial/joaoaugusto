@@ -1,0 +1,744 @@
+/* --------------- CONFIGURAÇÕES GLOBAIS --------------- */
+
+*
+{
+    pad: 0px;
+    margin: 0px;
+}
+
+
+/* --------------- FONTE --------------- */
+
+.josefin-slab 
+{
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/* --------------- <BODY> --------------- */
+
+.corpo
+{
+  min-height: 100vh;
+
+  background-color: #262626;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* --------------- HEADER --------------- */
+
+.topo
+{
+  display: flex;
+  flex-direction: row;
+
+  font-family: "Josefin Slab", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+
+  padding-top: 35px;
+}
+
+.home-button
+{
+  font-size: 20px;
+  text-decoration: none;
+  color: #F2B63C;
+
+  margin-right: 25px;
+
+  transition: transform 0.2s ease;
+}
+.home-button:hover
+{
+  transform: scale(1.10);
+}
+
+.projetos-button
+{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+
+  transition: transform 0.2s ease;
+}
+.projetos-button:hover
+{
+  transform: scale(1.10);
+}
+
+.contato-button
+{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+
+  margin-left: 25px;
+
+  transition: transform 0.2s ease;
+}
+.contato-button:hover
+{
+  transform: scale(1.10);
+}
+
+
+/* --------------- CONFIGURAÇÕES DA PÁGINA --------------- */
+
+
+/* --------------- MAIN --------------- */
+
+.container-pai
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+
+
+/* --------------- CIMA --------------- */
+
+.cima-esquerda
+{
+  width: 250px;
+  height: auto;
+
+  margin-top: 30px;
+}
+
+.h2-cima-esquerda
+{
+  width: 270px;
+
+  font-family: "Josefin Slab", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 24px;
+
+  color: white;
+}
+
+.h1-cima-esquerda
+{
+  width: 270px;
+  font-family: "Josefin Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+
+  color: white;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* --------------- MEIO --------------- */
+
+.eu-img
+{
+  width: 270px;
+
+  margin-top: 50px;
+}
+
+
+/* --------------- BAIXO --------------- */
+
+.baixo-esquerda-superior
+{
+  width: 120%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-top: 50px;
+}
+
+.baixo-esquerda-inferior
+{
+  width: 120%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-top: 20px;
+}
+
+.icon-box
+{
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-cima
+{
+  position: absolute;
+
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #111;
+  color: white;
+
+  padding: 5px 10px;
+  border-radius: 6px;
+
+  font-size: 12px;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.icon-box:hover .tooltip-cima
+{
+  opacity: 1;
+}
+
+
+.tooltip
+{
+  position: absolute;
+
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #111;
+  color: white;
+
+  padding: 5px 10px;
+  border-radius: 6px;
+
+  font-size: 12px;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.icon-box:hover .tooltip
+{
+  opacity: 1;
+}
+
+.icon
+{
+  height: 45px;
+  border-radius: 10px;
+
+  transition: transform 0.2s ease;
+}
+
+.icon:hover
+{
+  transform: scale(1.12);
+}
+
+
+/* --------------- FOOTER --------------- */
+
+.base
+{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  margin-top: 50px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.base p
+{
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: "Josefin Slab", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/* --------------- CONFIGURAÇÕES RESPONSIVAS --------------- */
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------- TABLET --------------- */
+
+@media (min-width: 768px)
+{
+  /* --------------- HEADER --------------- */
+
+  .topo
+  {
+    padding-top: 50px;
+  }
+
+  .home-button
+  {
+    font-size: 24px;
+
+    margin-right: 28px;
+  }
+
+  .projetos-button
+  {
+    font-size: 24px;
+  }
+
+  .contato-button
+  {
+    font-size: 24px;
+
+    margin-left: 28px;
+  }
+
+
+  /* --------------- MAIN --------------- */
+
+  .meio
+  {
+    flex: 1;
+  }
+
+  .container-pai
+  {
+    width: 100%;
+    max-width: 620px;
+
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "texto foto"
+      "tecnologias-cima tecnologias-cima"
+      "tecnologias-baixo tecnologias-baixo";
+    
+    column-gap: 70px;
+    margin: 100px auto 0px auto;
+  }
+
+
+  /* ----- MINHA DESCRIÇÃO ----- */
+
+  .cima-esquerda
+  {
+    grid-area: texto;
+    width: 280px;
+
+    margin-top: 0px;
+  }
+  .h2-cima-esquerda
+  {
+    width: 300px;
+
+    font-size: 28px;
+  }
+  .h1-cima-esquerda
+  {
+    width: 280px;
+
+    font-size: 50px;
+  }
+
+
+  /* ----- MINHA FOTO ----- */
+
+  .meio-direita
+  {
+    grid-area: foto;
+    align-self: center;
+  }
+
+  .eu-img
+  {
+    display: block;
+    width: 310px;
+
+    margin-top: 0px;
+  }
+
+
+  /* ----- MINHAS COMPETÊNCIAS ----- */
+
+  .baixo-esquerda-superior
+  {
+    width: auto;
+
+    grid-area: tecnologias-cima;
+    justify-content: center;
+
+    gap: 24px;
+    margin-top: 130px;
+  }
+
+  .baixo-esquerda-inferior
+  {
+    width: auto;
+    grid-area: tecnologias-baixo;
+    justify-content: center;
+
+    gap: 24px;
+    margin-top: 24px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------- DESKTOP PEQUENO --------------- */
+
+@media (min-width: 1024px) and (max-height: 600px)
+{
+  /* --------------- HEADER --------------- */
+
+  .topo
+  {
+    padding-top: 35px;
+  }
+
+
+  /* --------------- MAIN --------------- */
+
+  .container-pai
+  {
+    width: 100%;
+    max-width: 780px;
+
+    grid-template-columns: 350px 250px;
+    grid-template-areas:
+      "texto foto"
+      "tecnologias-cima foto"
+      "tecnologias-baixo foto";
+    justify-content: space-between;
+
+    column-gap: 120px;
+    margin-top: 50px;
+  }
+
+
+  /* ----- MINHA DESCRIÇÃO ----- */
+
+  .cima-esquerda
+  {
+    width: 350px;
+  }
+
+  .h2-cima-esquerda
+  {
+    font-size: 28px;
+  }
+
+  .h1-cima-esquerda
+  {
+    font-size: 50px;
+
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+
+  /* ----- MINHA FOTO ----- */
+
+  .eu-img
+  {
+    width: 310px;
+
+    display: block;
+
+    margin-top: -30px;
+  }
+
+
+  /* ----- MINHAS COMPETÊNCIAS ----- */
+
+  .baixo-esquerda-superior
+  {
+    justify-content: center;
+    gap: 22px;
+
+    margin-top: 70px;
+    margin-left: -40px;
+  }
+
+  .baixo-esquerda-inferior
+  {
+    justify-content: center;
+    gap: 22px;
+
+    margin-top: 18px;
+    margin-left: -40px;
+  }
+
+  .icon
+  {
+    height: 38px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------- NEXT HUB MAX --------------- */
+
+@media (min-width: 1280px)
+{
+  /* --------------- MAIN --------------- */
+
+  .container-pai
+  {
+    width: 100%;
+    max-width: 1180px;
+    grid-template-columns: 350px 300px;
+    column-gap: 300px;
+
+    margin-top: 125px;
+  }
+
+
+  /* ----- MINHA DESCRIÇÃO ----- */
+
+  .h1-cima-esquerda
+  {
+    width: 340px;
+
+    font-size: 60px;
+
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+
+  /* ----- MINHA FOTO ----- */
+
+  .eu-img
+  {
+    width: 360px;
+  }
+
+
+  /* ----- MINHAS COMPETÊNCIAS ----- */
+
+  .baixo-esquerda-superior
+  {
+    margin-top: 50px;
+    justify-content: start;
+  }
+
+  .baixo-esquerda-inferior
+  {
+    margin-left: 10px;
+    justify-content: start;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* --------------- DESKTOP MEDIO --------------- */
+
+@media (min-width: 1600px)
+{
+  /* --------------- HEADER --------------- */
+
+  .topo
+  {
+    padding-top: 45px;
+    font-size: 20px;
+  }
+
+  .home-button
+  {
+    margin-right: 45px;
+  }
+
+  .contato-button
+  {
+    margin-left: 45px;
+  }
+
+
+  /* --------------- MAIN --------------- */
+
+  .container-pai
+  {
+    width: 100%;
+    max-width: 1180px;
+    grid-template-columns: 470px 400px;
+    column-gap: 230px;
+
+    margin-top: 95px;
+  }
+
+
+  /* ----- MINHA DESCRIÇÃO ----- */
+
+  .cima-esquerda
+  {
+    width: 450px;
+  }
+
+  .h2-cima-esquerda
+  {
+    width: 400px;
+
+    font-size: 35px;
+  }
+
+  .h1-cima-esquerda
+  {
+    width: 450px;
+
+    font-size: 80px;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+
+  /* ----- MINHA FOTO ----- */
+
+  .eu-img
+  {
+    width: 425px;
+  }
+
+
+  /* ----- MINHAS COMPETÊNCIAS ----- */
+
+  .baixo-esquerda-superior
+  {
+    gap: 30px;
+
+    margin-top: 95px;
+  }
+
+  .baixo-esquerda-inferior
+  {
+    gap: 30px;
+
+    margin-top: 25px;
+  }
+
+  .icon
+  {
+    height: 48px;
+    border-radius: 8px;
+  }
+
+  .tooltip-cima
+  {
+    top: -45px;
+  }
+
+  .tooltip
+  {
+    bottom: -45px;
+  }
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------- FULL HD --------------- */
+
+@media (min-width: 1920px)
+{
+  /* --------------- MAIN --------------- */
+
+  .container-pai
+  { 
+    max-width: 1380px;
+
+    column-gap: 400px;
+    margin-top: 150px;
+  }
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------- QUAD HD --------------- */
+
+@media (min-width: 2560px)
+{
+  /* --------------- MAIN --------------- */
+
+  .container-pai
+  { 
+    max-width: 1800px;
+
+    column-gap: 700px;
+    margin-top: 250px;
+  }
+
+
+  /* ----- MINHA DESCRIÇÃO ----- */
+
+  .cima-esquerda
+  {
+    width: 450px;
+  }
+
+  .h2-cima-esquerda
+  {
+    width: 420px;
+
+    font-size: 40px;
+  }
+
+  .h1-cima-esquerda
+  {
+    width: 510px;
+
+    font-size: 90px;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+
+  /* ----- MINHA FOTO ----- */
+
+  .eu-img
+  {
+    width: 465px;
+
+    margin-top: -100px;
+  }
+
+
+  /* ----- MINHAS COMPETÊNCIAS ----- */
+
+  .baixo-esquerda-superior
+  {
+    gap: 30px;
+
+    margin-top: 260px;
+  }
+}

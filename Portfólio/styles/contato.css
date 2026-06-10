@@ -1,0 +1,556 @@
+/* --------------- CONFIGURAÇÕES GLOBAIS --------------- */
+
+*
+{
+    pad: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* --------------- FONTE --------------- */
+
+.josefin-slab 
+{
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/* --------------- <BODY> --------------- */
+
+.corpo
+{
+  min-height: 100vh;
+
+  background-color: #262626;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Josefin Slab', serif;
+}
+
+/* --------------- MAIN --------------- */
+
+.meio
+{
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.background-contato
+{
+  display: none;
+}
+
+.conteudo-contato
+{
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: #262626;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* --------------- HEADER --------------- */
+
+.topo
+{
+  display: flex;
+  flex-direction: row;
+
+  font-family: "Josefin Slab", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+
+  padding-top: 35px;
+}
+
+.home-button
+{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+
+  margin-right: 25px;
+
+  transition: transform 0.2s ease;
+}
+.home-button:hover
+{
+  transform: scale(1.10);
+}
+
+.projetos-button
+{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+
+  transition: transform 0.2s ease;
+}
+.projetos-button:hover
+{
+  transform: scale(1.10);
+}
+
+.contato-button
+{
+  font-size: 20px;
+  text-decoration: none;
+  color: #F2B63C;
+
+  margin-left: 25px;
+
+  transition: transform 0.2s ease;
+}
+.contato-button:hover
+{
+  transform: scale(1.10);
+}
+
+
+/* --------------- FORMULÁRIO --------------- */
+
+.formulario-contato
+{
+  width: min(100%, 295px);
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 50px;
+}
+
+.titulo-contato
+{
+  color: white;
+
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.formulario-contato label
+{
+  color: white;
+
+  font-weight: 500;
+  font-size: 20px;
+
+  margin-bottom: 5px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea
+{
+  width: 100%;
+  height: 50px;
+
+  border: 2px solid #F2B63C;
+  border-radius: 8px;
+  outline: none;
+
+  background-color: #F2F2F2;
+  color: #111;
+
+  font-family: "Josefin Slab", serif;
+  font-weight: 600;
+  font-size: 20px;
+
+  padding: 8px 10px;
+  margin-bottom: 20px;
+
+  transition: transform 0.3s ease;
+}
+
+.formulario-contato input:hover
+{
+  transform: scale(1.01);
+}
+
+.formulario-contato textarea
+{
+  height: 100px;
+  resize: none;
+
+  transition: transform 0.3s ease;
+}
+.formulario-contato textarea:hover
+{
+  transform: scale(1.01);
+}
+
+.botao-enviar
+{
+  width: 230px;
+  height: 48px;
+
+  align-self: center;
+
+  border: 2px solid #D8DCE3;
+  border-radius: 8px;
+
+  background-color: #D8DCE3;
+  color: black;
+
+  font-family: "Josefin Slab", serif;
+  font-weight: 700;
+  font-size: 20px;
+
+  cursor: pointer;
+
+  margin-top: 20px;
+
+  transition: transform 0.3s ease;
+}
+
+.botao-enviar:hover
+{
+  background-color: #D8DCE3;
+  transform: scale(1.02);
+}
+
+
+/* --------------- REDES SOCIAIS --------------- */
+
+.redes-sociais
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.icone-rede
+{
+  width: 56px;
+  height: 56px;
+  object-fit:cover;
+
+  transition: transform 0.2s ease;
+}
+.icone-rede:hover
+{
+  transform: scale(1.12);
+}
+
+
+/* --------------- FOOTER --------------- */
+
+.base
+{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.base p
+{
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: "Josefin Slab", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/* --------------- CONFIGURAÇÕES RESPONSIVAS --------------- */
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------- TABLET --------------- */
+
+@media (min-width: 768px)
+{
+  /* --------------- MAIN --------------- */
+
+  .meio
+  {
+    flex-direction: row;
+  }
+
+  .background-contato
+  {
+    display: block;
+
+    width: 50%;
+    min-height: 100vh;
+
+    background-image: url("../img/fundo-contato.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: top center;
+  }
+
+
+  /* --------------- HEADER --------------- */
+
+  .topo
+  {
+    padding-top: 50px;
+  }
+
+  .home-button
+  {
+    font-size: 24px;
+
+    margin-right: 28px;
+  }
+
+  .projetos-button
+  {
+    font-size: 24px;
+  }
+
+  .contato-button
+  {
+    font-size: 24px;
+
+    margin-left: 28px;
+  }
+
+
+  /* --------------- FORMULÁRIO --------------- */
+
+  .conteudo-contato
+  {
+    width: 50%;
+    min-height: 100vh;
+
+    border-left: 3px solid white;
+  }
+
+  .titulo-contato
+  {
+    font-size: 48px;
+  }
+
+  .formulario-contato
+  {
+    margin-top: 80px;
+  }
+
+  .formulario-contato label
+  {
+    font-size: 24px;
+  }
+
+  .formulario-contato input,
+  .formulario-contato textarea
+  {
+    font-size: 24px;
+  }
+
+  .botao-enviar
+  {
+    font-size: 24px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------- DESKTOP PEQUENO --------------- */
+
+@media (min-width: 1024px) and (max-height: 900px)
+{
+  /* --------------- MAIN --------------- */
+
+  .conteudo-contato
+  {
+    width: 40%;
+    min-height: 100vh;
+  }
+
+  .background-contato
+  {
+    width: 60%;
+  }
+
+
+  /* --------------- HEADER --------------- */
+
+  .topo
+  {
+    padding-top: 35px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------- NEXT HUB MAX --------------- */
+
+@media (min-width: 1280px)
+{
+  /* --------------- MAIN --------------- */
+
+  .conteudo-contato
+  {
+    width: 35%;
+    min-height: 100vh;
+  }
+
+  .background-contato
+  {
+    width: 65%;
+  }
+
+  /* --------------- FORMULÁRIO --------------- */
+
+  .formulario-contato
+  {
+    width: 370px;
+  }
+
+  .titulo-contato
+  {
+    font-size: 50px;
+
+    margin-bottom: 40px;
+  }
+
+  .formulario-contato label
+  {
+    font-size: 24px;
+  }
+
+  .formulario-contato input
+  {
+    width: 370px;
+    height: 55px;
+  }
+
+  .formulario-contato textarea
+  {
+    width: 370px;
+    height: 120px;
+  }
+
+  .botao-enviar
+  {
+    width: 260px;
+    height: 50px;
+  }
+
+
+  /* --------------- REDES SOCIAIS --------------- */
+
+  .redes-sociais
+  {
+    margin-top: 70px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------- FULL HD --------------- */
+
+@media (min-width: 1920px)
+{
+  /* --------------- HEADER --------------- */
+
+  .topo
+  {
+    padding-top: 45px;
+  }
+
+
+  /* --------------- FORMULÁRIO --------------- */
+
+  .formulario-contato
+  {
+    width: 420px;
+
+    margin-top: 120px;
+  }
+
+  .formulario-contato input,
+  .formulario-contato textarea
+  {
+    width: 420px;
+
+    margin-bottom: 30px;
+  }
+
+
+  /* --------------- REDES SOCIAIS --------------- */
+
+  .icone-rede
+  {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------- QUAD HD --------------- */
+
+@media (min-width: 2560px)
+{
+  /* --------------- FORMULÁRIO --------------- */
+
+  .formulario-contato
+  {
+    width: 480px;
+
+    margin-top: 150px;
+  }
+
+  .titulo-contato
+  {
+    font-size: 60px;
+
+    margin-bottom: 60px;
+  }
+
+  .formulario-contato input
+  {
+    width: 480px;
+    height: 65px;
+  }
+  .formulario-contato textarea
+  {
+    width: 480px;
+    height: 150px;
+  }
+
+  .botao-enviar
+  {
+    width: 325px;
+    height: 65px;
+  }
+
+
+  /* --------------- REDES SOCIAIS --------------- */
+
+  .icone-rede
+  {
+    width: 72px;
+    height: 72px;
+  }
+}

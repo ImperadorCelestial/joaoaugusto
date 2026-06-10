@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <!--  linkando o css da página -->
+    <link rel="stylesheet" href="./styles/contato.css"> 
+
+    <!--  linkando a fonte principal do projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100..700&display=swap" rel="stylesheet">
+
+
+    <meta name="description" content="Portfólio de João Augusto, desenvolvedor web júnior com foco em Back-End.">
+</head>
+<body class="corpo">
+
+    <main class="meio">
+
+        <section class="background-contato" aria-label="Imagem decorativa da página de contato"></section>
+
+        <section class="conteudo-contato">
+
+            <header class="topo">
+
+                <a href="index.html" class="home-button">Início</a>
+                <a href="projetos.html" class="projetos-button">Projetos</a>
+                <a href="contato.html" class="contato-button">Contato</a>
+
+            </header>
+
+            <form 
+                class="formulario-contato"
+                action="https://formsubmit.co/joaoaugustocamposfonseca@gmail.com"
+                method="POST"
+            >
+                <h1 class="titulo-contato">
+                    Fale Comigo
+                </h1>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <input type="hidden" name="_subject" value="Nova mensagem pelo portfólio">
+                <input type="hidden" name="_captcha" value="false">
+
+                <button type="submit" class="botao-enviar">
+                    Enviar
+                </button>
+
+            </form>
+
+            <div class="redes-sociais">
+
+                <a href="https://github.com/ImperadorCelestial" target="_blank" aria-label="GitHub">
+                    <img src="./img/icons/GitHub icon - white.png" alt="GitHub" class="icone-rede">
+                </a>
+
+                <a href="./assets/João Augusto Campos Fonseca.pdf" target="_blank" aria-label="Curriculo">
+                    <img src="./img/icons/CV icon - white.png" alt="Curriculo" class="icone-rede">
+                </a>
+
+                <a href="https://www.linkedin.com/in/joão-augusto-9751771ab/" target="_blank" aria-label="LinkedIn">
+                    <img src="./img/icons/Linkedin icon - white.png" alt="LinkedIn" class="icone-rede">
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="base">
+        <p>
+            © 2026 João Augusto — Todos os direitos reservados.
+        </p>
+    </footer>
+    
+</body>
+</html>
