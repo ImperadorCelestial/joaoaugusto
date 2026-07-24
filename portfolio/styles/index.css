@@ -156,20 +156,22 @@
 
 /* --------------- BAIXO --------------- */
 
-.baixo-esquerda-superior
+.hard-skills
 {
   width: 120%;
-  height: auto;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  font-family: "Josefin Slab", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+
+  color: white;
 
   margin-top: 50px;
+  margin-bottom: 0;
 }
 
-.baixo-esquerda-inferior
+.linha-skills
 {
   width: 120%;
   height: auto;
@@ -179,7 +181,21 @@
   align-items: center;
   justify-content: space-around;
 
-  margin-top: 20px;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.65);
+}
+
+.baixo-esquerda-inferior-1
+{
+  margin-top: 30px;
+}
+
+.baixo-esquerda-superior-2,
+.baixo-esquerda-inferior-3
+{
+  margin-top: 40px;
 }
 
 .icon-box
@@ -326,6 +342,7 @@
   .meio
   {
     flex: 1;
+    width: 100%;
   }
 
   .container-pai
@@ -335,12 +352,16 @@
 
     display: grid;
     justify-content: space-between;
-    grid-template-columns: auto 1fr auto;
+
+    grid-template-columns: 280px 310px;
+
     grid-template-areas:
       "texto foto"
-      "tecnologias-cima tecnologias-cima"
-      "tecnologias-baixo tecnologias-baixo";
-    
+      "titulo-skills titulo-skills"
+      "skills-1 skills-1"
+      "skills-2 skills-2"
+      "skills-3 skills-3";
+
     column-gap: 70px;
     margin: 100px auto 0px auto;
   }
@@ -382,30 +403,47 @@
     display: block;
     width: 310px;
 
-    margin-top: 0px;
+    margin-top: 20px;
   }
 
 
   /* ----- MINHAS COMPETÊNCIAS ----- */
 
-  .baixo-esquerda-superior
+  .hard-skills
   {
-    width: auto;
+    grid-area: titulo-skills;
 
-    grid-area: tecnologias-cima;
-    justify-content: center;
+    width: 390px;
+    justify-self: center;
 
-    gap: 24px;
     margin-top: 130px;
+    margin-bottom: 0;
   }
 
-  .baixo-esquerda-inferior
+  .linha-skills
   {
-    width: auto;
-    grid-area: tecnologias-baixo;
-    justify-content: center;
+    width: 390px;
+    justify-self: center;
 
+    justify-content: space-between;
     gap: 24px;
+  }
+
+  .baixo-esquerda-inferior-1
+  {
+    grid-area: skills-1;
+    margin-top: 30px;
+  }
+
+  .baixo-esquerda-superior-2
+  {
+    grid-area: skills-2;
+    margin-top: 24px;
+  }
+
+  .baixo-esquerda-inferior-3
+  {
+    grid-area: skills-3;
     margin-top: 24px;
   }
 }
@@ -434,8 +472,10 @@
     grid-template-columns: 350px 250px;
     grid-template-areas:
       "texto foto"
-      "tecnologias-cima foto"
-      "tecnologias-baixo foto";
+      "titulo-skills foto"
+      "skills-1 foto"
+      "skills-2 ."
+      "skills-3 .";
     justify-content: space-between;
 
     column-gap: 120px;
@@ -472,28 +512,43 @@
 
     display: block;
 
-    margin-top: -30px;
+    margin-top: -80px;
   }
 
 
   /* ----- MINHAS COMPETÊNCIAS ----- */
 
-  .baixo-esquerda-superior
+  .hard-skills
   {
-    justify-content: center;
-    gap: 22px;
+    width: auto;
+    justify-self: stretch;
 
-    margin-top: 70px;
+    margin-top: 50px;
+  }
+
+  .linha-skills
+  {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+
+    gap: 0;
+
     margin-left: -40px;
   }
 
-  .baixo-esquerda-inferior
+  .baixo-esquerda-inferior-1,
+  .baixo-esquerda-superior-2,
+  .baixo-esquerda-inferior-3
   {
-    justify-content: center;
-    gap: 22px;
-
     margin-top: 18px;
-    margin-left: -40px;
+  }
+
+  .linha-skills .icon-box
+  {
+    justify-self: center;
   }
 
   .icon
@@ -510,6 +565,11 @@
 {
   /* --------------- MAIN --------------- */
 
+  .meio
+  {
+    width: auto;
+  }
+
   .container-pai
   {
     width: 100%;
@@ -517,7 +577,7 @@
     grid-template-columns: 350px 300px;
     column-gap: 300px;
 
-    margin-top: 125px;
+    margin-top: 100px;
   }
 
 
@@ -539,21 +599,45 @@
   .eu-img
   {
     width: 360px;
+
+    margin-top: 50px;
   }
 
 
   /* ----- MINHAS COMPETÊNCIAS ----- */
 
-  .baixo-esquerda-superior
+  .hard-skills
   {
+    width: 390px;
+    justify-self: start;
+
     margin-top: 50px;
-    justify-content: start;
+    margin-left: 0;
   }
 
-  .baixo-esquerda-inferior
+  .linha-skills
   {
-    margin-left: 10px;
-    justify-content: start;
+    width: 390px;
+    justify-self: start;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+
+    gap: 0;
+    margin-left: 0;
+  }
+
+  .linha-skills .icon-box
+  {
+    justify-self: center;
+  }
+
+  .baixo-esquerda-inferior-1,
+  .baixo-esquerda-superior-2,
+  .baixo-esquerda-inferior-3
+  {
+    margin-top: 25px;
   }
 }
 
@@ -729,7 +813,7 @@
   {
     width: 465px;
 
-    margin-top: -100px;
+    margin-top: 100px;
   }
 
 
